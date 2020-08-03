@@ -15,6 +15,10 @@ namespace NETMenu
 
         bool isChoosing = true;
 
+        bool showCursor = false;
+
+        bool initialCursorState = Console.CursorVisible;
+
         bool textCenter = false;
 
         bool showArrow = true;
@@ -25,41 +29,11 @@ namespace NETMenu
         ConsoleColor selectedTextColor = ConsoleColor.Red;
         ConsoleColor arrowColor = ConsoleColor.White;
         ConsoleColor initialColor = Console.ForegroundColor;
-
+    
         int HorizontalPadding = 0;
         int VerticalPadding = 1;
         int CurrentHoverItemIndex = 0;
 
-        /// <summar>
-        /// Adds item to the menu list.
-        /// </summar>
-        public void AddItem(string s)
-        {
-            try 
-            {
-                items.Add(s);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine("Error while adding the item to the list\n" + e);
-            }
-        }
-
-        /// <summar>
-        /// Adds items to the menu list.
-        /// </summar>
-        public void AddItems(params string[] items)
-        {
-            try 
-            {
-                this.items.AddRange(items);
-            }
-
-            catch(Exception e)
-            {
-                Console.WriteLine("Error while adding the items to the list\n" + e);
-            }
-        }
 
         /// <summary>
         /// Starts the menu system.
@@ -69,6 +43,7 @@ namespace NETMenu
         public int Start()
         {
             Clear.ClearAll();
+            Console.CursorVisible = showCursor;
 
             while (isChoosing)
             {
@@ -106,8 +81,40 @@ namespace NETMenu
             isChoosing = true;
 
             Console.ForegroundColor = initialColor;
+            Console.CursorVisible = initialCursorState;
 
             return CurrentHoverItemIndex;
+        }
+
+        /// <summar>
+        /// Adds item to the menu list.
+        /// </summar>
+        public void AddItem(string s)
+        {
+            try 
+            {
+                items.Add(s);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Error while adding the item to the list\n" + e);
+            }
+        }
+
+        /// <summar>
+        /// Adds items to the menu list.
+        /// </summar>
+        public void AddItems(params string[] items)
+        {
+            try 
+            {
+                this.items.AddRange(items);
+            }
+
+            catch(Exception e)
+            {
+                Console.WriteLine("Error while adding the items to the list\n" + e);
+            }
         }
 
         /// <summary>
@@ -176,15 +183,28 @@ namespace NETMenu
             selectedTextColor = color;
         }
 
+        /// <summary>
+        /// Centers the menu text.
+        /// </summary>
         public void CenterText()
         {
             textCenter = true;
         }
 
-        /// 
+        /// <summary>
+        /// Disables the select symbol.
+        /// </summary>
         public void DisableSymbol()
         {
             showArrow = false;
+        }
+
+        /// <summary>
+        /// Enables the cursor.
+        /// </summary>
+        public void EnableCursor()
+        {
+            showCursor = true;
         }
 
         void CheckForMenuInput()
@@ -210,3 +230,4 @@ namespace NETMenu
         }
     }
 }
+
