@@ -35,7 +35,7 @@ https://git-scm.com/
 ### Installing
 #### The following instructions will setup the menu into your existing console project.
 
-1. Downloadind NETMenu.dll file.
+1. Download the NETMenu.dll file.
 
 ```
 https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
