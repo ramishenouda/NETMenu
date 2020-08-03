@@ -73,31 +73,60 @@ dotnet restore
 ```
 
 ## Guide
-### Simple example.
+### Examples.
 ```
-  Menu HomeMenu = new Menu();
+Menu HomeMenu = new Menu();
 
-  // HomeMenu.AddItems("Play", "Options", "Exit");
-  HomeMenu.AddItem("Play");
-  HomeMenu.AddItem("Options");
-  HomeMenu.AddItem("Exit");
+// HomeMenu.AddItems("Play", "Options", "Exit");
+HomeMenu.AddItem("Play");
+HomeMenu.AddItem("Options");
+HomeMenu.AddItem("Exit");
 
-  // or call it whatever u want.
-  int choice = HomeMenu.Start();
+// or call it whatever u want.
+int choice = HomeMenu.Start();
 
-  if(choice == 0)
-      Console.WriteLine("run the play function.");
-  else if(choice == 1)
-      Console.WriteLine("run the options function.");
-  else // else if(choice == 2)
-      Console.WriteLine("run the exit function.");
+if(choice == 0)
+    Console.WriteLine("run the play function.");
+else if(choice == 1)
+    Console.WriteLine("run the options function.");
+else // else if(choice == 2)
+    Console.WriteLine("run the exit function.");
 ```
+
+<img src="https://raw.githubusercontent.com/ramishenouda/NETMenu/master/assets/example1.PNG" />
+
+```
+Menu HomeMenu = new Menu();
+
+// HomeMenu.AddItems("Play", "Options", "Exit Game");
+HomeMenu.AddItem("Play");
+HomeMenu.AddItem("Options");
+HomeMenu.AddItem("Exit Game");
+
+HomeMenu.SetSelectedTextColor(ConsoleColor.Yellow);
+HomeMenu.SetSelectSymbol("=> ");
+HomeMenu.SetVerticalPadding(2);
+HomeMenu.SetHorizontalPadding(2);
+
+// or call it whatever u want.
+int choice = HomeMenu.Start();
+
+if(choice == 0)
+    Console.WriteLine("run the play function.");
+else if(choice == 1)
+    Console.WriteLine("run the options function.");
+else // else if(choice == 2)
+    Console.WriteLine("run the exit function.");
+```
+
+<img src="https://raw.githubusercontent.com/ramishenouda/NETMenu/master/assets/example2.PNG" />
+
 
 ### Methods
 
 ```Start```: Starts the menu.
 
-`return type`: returns an integer when the user clicks on the (Enter key), 0 for the first item, 1 for the second item, and n for the nth item.</br> </br>
+`return`: returns an integer when the user clicks on the Enter key. 0 for the first item, 1 for the second item, and n for the nth item.</br> </br>
 
 ```AddItems(string)```: Adds items to the menu list.
 
@@ -113,9 +142,11 @@ dotnet restore
 
 ```SetSelectSymbol(string or char)```: Sets the menu select symbol. default is >.
 
-```CenterText```: Centers the menu text. default is false.
+```CenterText```: Centers the menu text.
 
-```DisableSymbol```: Disables the select symbol. default is false.
+```DisableSymbol```: Disables the select symbol.
+
+```EnableCursor```: Enables the cursor.
 
 ## Built With
 
