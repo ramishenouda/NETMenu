@@ -126,7 +126,7 @@ else // else if(choice == 2)
 
 ```Start```: Starts the menu.
 
-`return`: returns an integer when the user clicks on the Enter key. 0 for the first item, 1 for the second item, and n for the nth item.</br> </br>
+ReturnType: returns an integer when the user clicks on the Enter key. 0 for the first item, 1 for the second item, and n for the nth item.</br> </br>
 
 ```AddItems(string)```: Adds items to the menu list.
 
