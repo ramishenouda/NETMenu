@@ -122,7 +122,7 @@ else // else if(choice == 2)
 <img src="https://raw.githubusercontent.com/ramishenouda/NETMenu/master/assets/example2.PNG" />
 
 
-### Methods
+### Documentation
 
 ```Start```: Starts the menu.
 
