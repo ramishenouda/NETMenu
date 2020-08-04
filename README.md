@@ -128,9 +128,9 @@ else // else if(choice == 2)
 
 ReturnType: returns an integer when the user clicks on the Enter key. 0 for the first item, 1 for the second item, and n for the nth item.</br> </br>
 
-```AddItems(string)```: Adds items to the menu list.
+```AddItem(string)```: Adds item to the menu list.
 
-```AddItem(string[])```: Adds item to the menu list.
+```AddItems(string[])```: Adds items to the menu list.
 
 ```SetHorizontalPadding(int)```: Adds Horizontal Padding, default is 0.
 
