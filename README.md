@@ -150,7 +150,7 @@ ReturnType: returns an integer when the user clicks on the Enter key. 0 for the 
 
 ## Built With
 
-* [ASP.NET core](https://dotnet.microsoft.com/apps/aspnet).
+* [.NET core](https://dotnet.microsoft.com/download).
 
 ## License
 
