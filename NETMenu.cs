@@ -37,8 +37,8 @@ namespace NETMenu
 
         /// <summary>
         /// Starts the menu system.
-        /// <para> the function returns an integer when the user clicks on the (Enter key). </para>
-        /// <para> the integer value is 0 for the first item, 1 for the second item, and n for the nth item. </para>
+        /// <para> The function returns an integer when the user clicks on the (Enter key). </para>
+        /// <para> The integer value is 0 for the first item, 1 for the second item, and n for the nth item. </para>
         /// </summary>
         public int Start()
         {
