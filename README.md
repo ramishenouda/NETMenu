@@ -146,7 +146,7 @@ ReturnType: returns an integer when the user clicks on the Enter key. 0 for the 
 
 ```DisableSymbol```: Disables the select symbol.
 
-```EnableCursor```: Enables the cursor.
+```EnableCursor```: Shows the cursor on the screen.
 
 ## Built With
 
