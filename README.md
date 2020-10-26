@@ -58,6 +58,8 @@ https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 
 4. Add using NETMenu; in your code. 
 
+This is how your directory should look like:
+    <img src="./assets/directory.PNG" />
 ```
 using NETMenu;
 ```
