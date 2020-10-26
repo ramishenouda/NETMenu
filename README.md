@@ -43,6 +43,8 @@ https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 
 2. Move the NETMenu.dll to the root folder of your project (where Program.cs is).
 
+<img src="./assets/directory.PNG" />
+
 3. Open your ```.csproj``` file and add the following code to the ```.csproj``` file in the ```<Project>``` tag.
 
 ```
@@ -57,9 +59,6 @@ https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 ```
 
 4. Add using NETMenu; in your code. 
-
-This is how your directory should look like:
-    <img src="./assets/directory.PNG" />
 ```
 using NETMenu;
 ```
