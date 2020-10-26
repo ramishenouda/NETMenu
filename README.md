@@ -41,9 +41,9 @@ https://git-scm.com/
 https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 ```
 
-2. Move the NETMenu.dll to the root folder of your project (where Program.cs is), and Open your ```.csproj``` file.
+2. Move the NETMenu.dll to the root folder of your project (where Program.cs is).
 
-3. Add the following code to the ```.csproj``` file in the ```<Project>``` tag.
+3. Open your ```.csproj``` file and add the following code to the ```.csproj``` file in the ```<Project>``` tag.
 
 ```
 <Project Sdk="Microsoft.NET.Sdk">
