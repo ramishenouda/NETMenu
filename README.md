@@ -41,7 +41,7 @@ https://git-scm.com/
 https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 ```
 
-2. Move the NETMenu.dll to the root folder of your project (where Program.cs is).
+2. Move the NETMenu.dll to the root folder of your project (where Program.cs located, or the file that has the Main function).
 
 <img src="./assets/directory.PNG" />
 
