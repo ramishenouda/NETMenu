@@ -63,6 +63,8 @@ https://github.com/ramishenouda/NETMenu/raw/master/assets/NETMenu.dll
 using NETMenu;
 ```
 
+5. Enjoy. Please check the examples below, for more information about the tool.
+
 ## Cloning
 
 Run the following commands in your terminal. Then use your favo code editor to open the project.
